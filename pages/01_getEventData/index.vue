@@ -59,6 +59,7 @@ export default {
     return {
       results: response.Item
     };
+    console.log(this.results);
   }
 };
 </script>
