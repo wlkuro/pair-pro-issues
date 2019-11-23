@@ -58,6 +58,7 @@ export default {
     const response = await axios.get(getUrl);
     // don't get confirm data
     //    console.log(this.results);
+    console.log(response);
     return {
       // parse error
       //console.log(response.Item);
