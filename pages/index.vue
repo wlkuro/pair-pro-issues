@@ -1,9 +1,24 @@
 <template>
   <section>
     <div>
-      <a href="/01_getEventData/index.vue">Connpassからのイベント取得</a>
-      <br>
-      <span>since 2019/11/20</span>
+      <table style="border:solid 1px;">
+        <thead>
+          <th style="width: 50px;">Status</th>
+          <th style="width: 150px;">Issue</th>
+          <th style="width: 125px;">Path</th>
+          <th style="width: 50px;">Date</th>
+        </thead>
+        <tbody style="word-wrap: break-word;">
+          <tr>
+            <td>todo</td>
+            <td>API を使って情報を取得する</td>
+            <td>
+              <a href="/01_getEventData/">01_getEventData</a>
+            </td>
+            <td>2019/11/20</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </section>
 </template>
