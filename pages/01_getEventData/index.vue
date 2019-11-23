@@ -56,10 +56,10 @@ export default {
     const param = "?order=2";
     const getUrl = encodeURI(baseUrl + param);
     const response = await axios.get(getUrl);
+    console.log(this.results);
     return {
       results: response.Item
     };
-    console.log(this.results);
   }
 };
 </script>
