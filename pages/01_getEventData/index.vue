@@ -56,9 +56,17 @@ export default {
     const param = "?order=2";
     const getUrl = encodeURI(baseUrl + param);
     const response = await axios.get(getUrl);
-    console.log(this.results);
+    // don't get confirm data
+    //    console.log(this.results);
     return {
+      // parse error
+      //console.log(response.Item);
+
+      // unexpected token
+      // console.log(results: response.Item);
       results: response.Item
+      // can't get results
+      //      console.log(results);
     };
   }
 };
