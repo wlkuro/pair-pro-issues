@@ -10,6 +10,14 @@
         </thead>
         <tbody style="word-wrap: break-word;">
           <tr>
+            <td>start</td>
+            <td>Vuejs 基礎</td>
+            <td>
+              <a href="/00_BootCamp/index.html">00_BootCamp</a>
+            </td>
+            <td>2019/12/06</td>
+          </tr>
+          <tr>
             <td>todo</td>
             <td>API を使って情報を取得する</td>
             <td>

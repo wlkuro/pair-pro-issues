@@ -60,14 +60,7 @@ export default {
     //    console.log(this.results);
     console.log(response);
     return {
-      // parse error
-      //console.log(response.Item);
-
-      // unexpected token
-      // console.log(results: response.Item);
       results: response.Item
-      // can't get results
-      //      console.log(results);
     };
   }
 };

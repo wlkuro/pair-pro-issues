@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>Bootcamp Vuejs</title>
+		<link rel="stylesheet" href="index.css">
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	</head>
+	<body>
+		<!-- c.f. https://jp.vuejs.org/v2/guide/index.html -->
+		<div id="app-1">
+			{{ message }}
+		</div>
+
+		<div id="app-2">
+			<span v-bind:title="msg">
+				Hover your mouse over me for a few seconds to see my dynamically bound title!
+			</span>
+		</div>
+
+		<div id="app-3">
+			<span v-if="seen">now you see me</span>
+		</div>
+
+		<div id="app-4">
+			<ol>
+				<li v-for="item in list">
+					{{ item.text }}
+				</li>
+			</ol>
+		</div>
+
+		<div id="app-5">
+			<p>{{ rmsg }}</p>
+			<button v-on:click="reverseMessage">Reverse Message</button>
+		</div>
+
+		<div id="app-6">
+			<p>{{ msg }}</p>
+			<input v-model="msg">
+		</div>
+
+		<div>
+			<ol>
+				<todo-item></todo-item>
+			</ol>
+		</div>
+
+		<script src="index.js"></script>
+	</body>
+</html>
+	
