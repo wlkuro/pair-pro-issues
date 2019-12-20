@@ -1,34 +1,9 @@
 <template>
-  <section class>
+  <section>
     <div>
-      <table>
-        <thead>
-          <th>開催日</th>
-          <th>イベント名</th>
-          <th>会場</th>
-          <th>参加人数</th>
-        </thead>
-        <tbody>
-          <tr v-for="item in results" :key="item.id">
-            <td>
-              <span>{{item.Item.started_at}}</span>
-            </td>
-            <td>
-              <a :href="item.Item.event_url">{{item.Item.title}}</a>
-            </td>
-            <td>
-              <span>
-                {{item.Item.address}}
-                <br>
-                {{item.Item.place}}
-              </span>
-            </td>
-            <td>
-              <span>{{item.Item.accepted}}</span>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <ul>
+        <li v-for="(element, index) in results">{{element.title}}{{element.owner_display_name}}</li>
+      </ul>
     </div>
   </section>
 </template>
@@ -58,9 +33,10 @@ export default {
     const response = await axios.get(getUrl);
     // don't get confirm data
     //    console.log(this.results);
-    console.log(response);
+    console.log("aaaa");
+    console.log(response.data.events);
     return {
-      results: response.Item
+      results: response.data.events
     };
   }
 };
